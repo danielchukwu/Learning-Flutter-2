@@ -18,11 +18,12 @@ class Home extends StatelessWidget {
         title: const Text("Seefriends"),
         centerTitle: true,
       ),
-      body: const Center(
-          child: Icon(
-        Icons.car_crash,
-        color: Colors.amber,
-      )),
+      body: IconButton(
+        onPressed: () {
+          print("clicked");
+        },
+        icon: const Icon(Icons.home),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text("Post"),
