@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: 'Seefriends',
+    theme: ThemeData(
+      primarySwatch: Colors.red,
+    ),
     home: Home(),
   ));
 }
@@ -14,7 +18,11 @@ class Home extends StatelessWidget {
         title: const Text("Seefriends"),
         centerTitle: true,
       ),
-      body: Center(child: Image.asset('assets/images/zion-up.jpeg')),
+      body: const Center(
+          child: Icon(
+        Icons.car_crash,
+        color: Colors.amber,
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text("Post"),
@@ -22,3 +30,6 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+// ElevatedButton
+// TextButton
