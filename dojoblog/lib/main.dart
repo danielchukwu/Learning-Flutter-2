@@ -18,13 +18,26 @@ class Home extends StatelessWidget {
         title: const Text("Seefriends"),
         centerTitle: true,
       ),
-      body: Container(
-        padding: const EdgeInsets.,
-        color: Colors.amber,
-        child: const Text(
-          "Love me",
-          style: TextStyle(fontSize: 20.0, color: Colors.white),
-        ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.amber,
+            child: const Text("3"),
+          ),
+          Container(
+            padding: const EdgeInsets.all(35.0),
+            color: Colors.pinkAccent,
+            child: const Text("3"),
+          ),
+          Container(
+            padding: const EdgeInsets.all(50.0),
+            color: Colors.black,
+            child: const Text("3", style: TextStyle(color: Colors.white)),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
