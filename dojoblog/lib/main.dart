@@ -19,23 +19,33 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            padding: const EdgeInsets.all(20.0),
-            color: Colors.amber,
-            child: const Text("3"),
+          // Image.asset('assets/images/zion-up.jpeg'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(20.0),
+              color: Colors.amber,
+              child: const Text("3"),
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(35.0),
-            color: Colors.pinkAccent,
-            child: const Text("3"),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(20.0),
+              color: Colors.pinkAccent,
+              child: const Text("3"),
+            ),
           ),
-          Container(
-            padding: const EdgeInsets.all(50.0),
-            color: Colors.black,
-            child: const Text("3", style: TextStyle(color: Colors.white)),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(20.0),
+              color: Colors.black,
+              child: const Text("3", style: TextStyle(color: Colors.white)),
+            ),
           ),
         ],
       ),
